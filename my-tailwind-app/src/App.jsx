@@ -14,10 +14,9 @@ import SectionTen from "./components/sectionTen.jsx";
 function App() {
   return (
     <div className="h-screen flex flex-col">
-
       <Navbar />
       <SectionOne />
-      {/* <SectionTwo/>
+      <SectionTwo />
       <SectionThree />
       <SectionFour />
       <SectionFive />
@@ -25,7 +24,7 @@ function App() {
       <SectionSeven />
       <SectionEight />
       <SectionNine />
-      <SectionTen /> */}
+      <SectionTen />
     </div>
   );
 }
