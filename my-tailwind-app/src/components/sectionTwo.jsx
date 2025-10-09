@@ -114,14 +114,14 @@ export default function sectionTwo() {
       <section>
         <div className="relative z-10 bg-white flex justfy-center gap-10 md:flex-row flex-col 2xl:px-[128px] md:px-[60px] px-[30px] 2xl:py-[50px] py-[30px]">
           <div className="md:w-2/4 w-full">
-            <h1 className="2xl:text-[64px] text-[40px] font-bold">
+            <h1 className="2xl:text-[64px] text-[40px] text-[#20222D] font-bold">
               <span className="text-[#E01923]">Appicoders</span> – #
               <span className="text-[#E01923]">1</span>. Mobile App & Web
               Development Company in USA
             </h1>
           </div>
           <div className="md:w-2/4 w-full">
-            <h1 className="2xl:text-[28px] text-[18px] font-semibold pb-9 ">
+            <h1 className="2xl:text-[28px] text-[18px] font-semibold pb-9 text-[#20222D]">
               Welcome to Appicoders, your trusted partner for expert mobile app
               and web development. With over 10+ years of experience, we
               specialize in designing, developing, and marketing cutting-edge
