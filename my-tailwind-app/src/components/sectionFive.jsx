@@ -48,7 +48,7 @@ export default function SectionFive() {
   ];
 
   return (
-    <div className="bg-[#EAEDEF]">
+    <div id="" className="bg-[#EAEDEF]">
       {/* Heading */}
       <div className="flex justify-center pt-[100px]">
         <h1 className="font-bold 2xl:text-[74px] text-[40px] text-[#20222D]">

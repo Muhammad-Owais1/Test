@@ -111,7 +111,7 @@ export default function sectionTwo() {
             </div>
  */}
 
-      <section>
+      <section id="about">
         <div className="relative z-10 bg-white flex justfy-center gap-10 md:flex-row flex-col 2xl:px-[128px] md:px-[60px] px-[30px] 2xl:py-[50px] py-[30px]">
           <div className="md:w-2/4 w-full">
             <h1 className="2xl:text-[64px] text-[40px] text-[#20222D] font-bold">

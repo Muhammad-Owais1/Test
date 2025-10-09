@@ -4,7 +4,10 @@ import Cloud from "../assets/images/section6/Cloud.png";
 
 export default function SectionSix() {
   return (
-    <div className="w-screen h-screen relative lg:block hidden overflow-hidden">
+    <div
+      id="technologies"
+      className="w-screen h-screen relative lg:block hidden overflow-hidden"
+    >
       <img
         src={Background}
         alt="Background"

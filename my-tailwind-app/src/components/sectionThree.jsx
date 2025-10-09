@@ -62,7 +62,7 @@ export default function SectionThree() {
   };
 
   return (
-    <div className="bg-[#EAEDEF] 2xl:py-[103px] py-[50px]">
+    <div id="services" className="bg-[#EAEDEF] 2xl:py-[103px] py-[50px]">
       <div className="text-center max-w-6xl mx-auto 2xl:mb-14 mb-5 p-4">
         <h2 className="2xl:text-[74px] text-[40px] font-bold text-[#20222D]">
           Why Choose Us?

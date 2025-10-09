@@ -18,7 +18,10 @@ export default function SectionSeven() {
   ];
 
   return (
-    <div className="relative flex justify-center items-center w-full">
+    <div
+      id="products"
+      className="relative flex justify-center items-center w-full"
+    >
       {/* Background Image */}
       <img
         src={Background}

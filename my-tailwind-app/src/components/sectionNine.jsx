@@ -5,7 +5,7 @@ import Vector from "../assets/images/section9/Vector.png";
 export default function SectionNine() {
   return (
     <>
-      <div className="bg-[#E01923] flex flex-col xl:flex-row">
+      <div id="contact" className="bg-[#E01923] flex flex-col xl:flex-row">
         {/* Left Section */}
         <div className="xl:w-[58%] w-full flex items-center justify-center px-[5%] py-10">
           <div className="text-white w-full max-w-[827px]">

@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import Rectangle1 from "../assets/images/NavBar/Rectangle1.png";
 import Rectangle2 from "../assets/images/NavBar/Rectangle2.png";
 import Phone from "../assets/images/NavBar/Vector.png";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,33 +54,81 @@ export default function Navbar() {
 
           {/* Desktop Menu */}
           <ul className="hidden xl:flex space-x-6 font-semibold 2xl:text-2xl text-base">
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            <Link className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
               Home
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               About
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="services"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Services
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="wcu"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Why Choose Us
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Portfolio
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="products"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Products
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="testimonial"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Testimonial
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="technologies"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Technologies
-            </li>
-            <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={600}
+              offset={-100}
+              className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+            >
               Contact
-            </li>
+            </Link>
           </ul>
 
           {/* Phone Button */}
@@ -103,28 +152,76 @@ export default function Navbar() {
         <li className="ml-[24px] hover:text-gray-200 cursor-pointer whitespace-nowrap">
           Home
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="about"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           About
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="services"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Services
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="wcu"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Why Choose Us
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="portfolio"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Portfolio
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="products"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Products
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="testimonial"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Testimonial
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="technologies"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Technologies
         </li>
-        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <li
+          to="contact"
+          smooth={true}
+          duration={600}
+          offset={-100}
+          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
+        >
           Contact
         </li>
       </ul>
