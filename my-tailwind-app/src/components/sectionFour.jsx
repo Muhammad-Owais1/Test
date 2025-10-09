@@ -6,10 +6,7 @@ import Scarlett from "../assets/images/section4/scarlett.png";
 
 export default function SectionFour() {
   return (
-    <div
-      id="wcu"
-      className="relative w-screen h-screen md:block hidden overflow-hidden"
-    >
+    <div id="wcu" className="relative w-screen h-screen md:block hidden ">
       <img
         src={Background}
         alt="Background"
