@@ -98,7 +98,7 @@ export default function Navbar() {
       <ul
         className={`xl:hidden absolute text-white  ${
           isOpen ? "flex" : "hidden"
-        } space-x-6 font-semibold 2xl:text-2xl text-base flex-col w-screen bg-red-600 py-5 left-0 top-32 z-[9000]`}
+        } space-x-6 font-semibold 2xl:text-2xl text-base flex-col w-screen bg-red-600 py-5 left-0 top-24 z-[9000]`}
       >
         <li className="ml-[24px] hover:text-gray-200 cursor-pointer whitespace-nowrap">
           Home
