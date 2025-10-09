@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Pills from "../assets/images/section5/pills.png";
 import BriefCase from "../assets/images/section5/briefCase.png";
 import DigitalEconomy from "../assets/images/section5/digitalEconomy.png";
@@ -48,37 +48,44 @@ export default function SectionFive() {
   ];
 
   return (
-    <div className='bg-[#EAEDEF]'>
+    <div className="bg-[#EAEDEF]">
       {/* Heading */}
-      <div className='flex justify-center pt-[100px]'>
-        <h1 className='font-bold text-[74px] text-[#20222D]'>Industries</h1>
+      <div className="flex justify-center pt-[100px]">
+        <h1 className="font-bold 2xl:text-[74px] text-[40px] text-[#20222D]">
+          Industries
+        </h1>
       </div>
 
       {/* Cards container */}
-      <div className='px-[124px] py-10 flex flex-col gap-6'>
+      <div className="2xl:px-[124px] sm:px-[70px] px-[20px] py-10 flex flex-col gap-6">
         {/* Split cards into 2 rows */}
         {[0, 1].map((rowIndex) => (
-          <div key={rowIndex} className='flex justify-between gap-6'>
+          <div
+            key={rowIndex}
+            className="flex justify-between flex-col lg:flex-row gap-6"
+          >
             {cards.slice(rowIndex * 3, rowIndex * 3 + 3).map((card, i) => (
               <div
                 key={i}
-                className='relative flex-1 h-[320px] bg-white flex gap-6 py-[75px] px-[37px] rounded-lg 
+                className='relative flex-1 2xl:h-[320px] h-[240px] bg-white flex gap-6 2xl:py-[75px] py-[30px] 2xl:px-[37px] px-[20px] rounded-lg 
                            after:content-[""] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[6px] 
                            after:bg-red-600 after:rounded-b-lg after:transition-all after:duration-300 hover:after:w-full'
               >
                 {/* Icon */}
-                <div className='w-[80px] h-[80px] flex-none flex items-start justify-center'>
+                <div className="2xl:w-[80px] 2xl:h-[80px] h-[40px] w-[40px] flex-none flex items-start justify-center">
                   <img
                     src={card.icon}
-                    alt=''
-                    className='w-full h-full object-contain'
+                    alt=""
+                    className="w-full h-full object-contain"
                   />
                 </div>
 
                 {/* Text content */}
-                <div className='flex flex-col gap-2'>
-                  <h1 className='text-2xl font-bold'>{card.title}</h1>
-                  <p className='text-xl font-normal'>{card.description}</p>
+                <div className="flex flex-col gap-2">
+                  <h1 className="text-2xl font-bold">{card.title}</h1>
+                  <p className="2xl:text-xl text-sm font-normal">
+                    {card.description}
+                  </p>
                 </div>
               </div>
             ))}
