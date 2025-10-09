@@ -197,24 +197,7 @@ export default function Navbar() {
         >
           Products
         </Link>
-        <Link
-          to="testimonial"
-          smooth={true}
-          duration={600}
-          offset={-100}
-          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
-        >
-          Testimonial
-        </Link>
-        <Link
-          to="technologies"
-          smooth={true}
-          duration={600}
-          offset={-100}
-          className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
-        >
-          Technologies
-        </Link>
+
         <Link
           to="contact"
           smooth={true}
