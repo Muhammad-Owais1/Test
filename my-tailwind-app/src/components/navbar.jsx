@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.png";
 import Rectangle1 from "../assets/images/NavBar/Rectangle1.png";
 import Rectangle2 from "../assets/images/NavBar/Rectangle2.png";
 import Phone from "../assets/images/NavBar/Vector.png";
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <nav className="bg-[#20222D] 2xl:px-[104px] px-[50px] pt-[20px] 2xl:pt-[55px] flex items-center justify-between flex-wrap gap-4">
@@ -20,16 +22,36 @@ export default function Navbar() {
             className="absolute top-0 left-0 w-screen"
           />
         </div>
+
         {/* Logo */}
         <div className="2xl:w-[348px] w-[200px] h-[87px] flex items-center z-50">
           <img src={logo} alt="Logo" className="w-full" />
         </div>
 
-        <div className=" h-[98px] flex-1 flex flex-col items-end justify-center text-white z-50">
-          {/* Menu Items */}
-          <div className="xl:hidden flex ">
-            <h1 className="text-4xl">☰</h1>
+        <div className="h-[98px] flex-1 flex flex-col items-end justify-center text-white z-50">
+          {/* Hamburger Button */}
+          <div
+            className="xl:hidden flex flex-col justify-center items-center w-8 h-8 cursor-pointer space-y-1"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <span
+              className={`block h-1 w-8 bg-white rounded transition-transform duration-300 ${
+                isOpen ? "rotate-45 translate-y-2" : ""
+              }`}
+            ></span>
+            <span
+              className={`block h-1 w-8 bg-white rounded transition-opacity duration-300 ${
+                isOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`block h-1 w-8 bg-white rounded transition-transform duration-300 ${
+                isOpen ? "-rotate-45 -translate-y-2" : ""
+              }`}
+            ></span>
           </div>
+
+          {/* Desktop Menu */}
           <ul className="hidden xl:flex space-x-6 font-semibold 2xl:text-2xl text-base">
             <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
               Home
@@ -71,6 +93,41 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu */}
+      <ul
+        className={`xl:hidden absolute text-white  ${
+          isOpen ? "flex" : "hidden"
+        } space-x-6 font-semibold 2xl:text-2xl text-base flex-col w-screen bg-red-600 py-5 left-0 top-32 z-[9000]`}
+      >
+        <li className="ml-[24px] hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Home
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          About
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Services
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Why Choose Us
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Portfolio
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Products
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Testimonial
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Technologies
+        </li>
+        <li className="hover:text-gray-200 cursor-pointer whitespace-nowrap">
+          Contact
+        </li>
+      </ul>
     </>
   );
 }
