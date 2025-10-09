@@ -149,10 +149,10 @@ export default function Navbar() {
           isOpen ? "flex" : "hidden"
         } space-x-6 font-semibold 2xl:text-2xl text-base flex-col w-screen bg-red-600 py-5 left-0 top-24 z-[9000]`}
       >
-        <li className="ml-[24px] hover:text-gray-200 cursor-pointer whitespace-nowrap">
+        <Link className="ml-[24px] hover:text-gray-200 cursor-pointer whitespace-nowrap">
           Home
-        </li>
-        <li
+        </Link>
+        <Link
           to="about"
           smooth={true}
           duration={600}
@@ -160,8 +160,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           About
-        </li>
-        <li
+        </Link>
+        <Link
           to="services"
           smooth={true}
           duration={600}
@@ -169,8 +169,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Services
-        </li>
-        <li
+        </Link>
+        <Link
           to="wcu"
           smooth={true}
           duration={600}
@@ -178,8 +178,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Why Choose Us
-        </li>
-        <li
+        </Link>
+        <Link
           to="portfolio"
           smooth={true}
           duration={600}
@@ -187,8 +187,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Portfolio
-        </li>
-        <li
+        </Link>
+        <Link
           to="products"
           smooth={true}
           duration={600}
@@ -196,8 +196,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Products
-        </li>
-        <li
+        </Link>
+        <Link
           to="testimonial"
           smooth={true}
           duration={600}
@@ -205,8 +205,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Testimonial
-        </li>
-        <li
+        </Link>
+        <Link
           to="technologies"
           smooth={true}
           duration={600}
@@ -214,8 +214,8 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Technologies
-        </li>
-        <li
+        </Link>
+        <Link
           to="contact"
           smooth={true}
           duration={600}
@@ -223,7 +223,7 @@ export default function Navbar() {
           className="hover:text-gray-200 cursor-pointer whitespace-nowrap"
         >
           Contact
-        </li>
+        </Link>
       </ul>
     </>
   );
